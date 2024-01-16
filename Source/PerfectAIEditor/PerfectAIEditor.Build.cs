@@ -22,7 +22,8 @@ public class PerfectAIEditor : ModuleRules
                 "SlateCore", 
                 "UnrealEd",
                 "AssetDefinition",
-                "PerfectAI",
+                "PerfectAI", 
+                "MessageLog",
             }
         );
     }

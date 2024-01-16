@@ -25,7 +25,7 @@ public class PerfectAI : ModuleRules
 		PublicDependencyModuleNames.AddRange(
 			new string[]
 			{
-				"Core",
+				"Core", "AIModule",
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
@@ -43,6 +43,16 @@ public class PerfectAI : ModuleRules
 			}
 			);
 		
+		if (Target.Type == TargetRules.TargetType.Editor)
+		{
+			PublicDependencyModuleNames.AddRange(
+				new[] {
+					"Slate",
+					"SlateCore",
+					"EditorStyle",
+				}
+			);
+		}
 		
 		DynamicallyLoadedModuleNames.AddRange(
 			new string[]

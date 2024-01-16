@@ -1,11 +1,9 @@
 ﻿#include "PerfectAIEditor.h"
 
-
 #define LOCTEXT_NAMESPACE "FPerfectAIEditorModule"
 
 void FPerfectAIEditorModule::StartupModule()
 {
-
     
 }
 
